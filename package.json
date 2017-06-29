@@ -1,7 +1,7 @@
 {
-  "name": "service-template",
+  "name": "atmira-core-log-decorator",
   "version": "1.0.0",
-  "description": "Plantilla sobre la que construir servicios.",
+  "description": "Servicio que permite almacenar y copiar facilmente trazas de la consola",
   "main": "./dist/app.bundle.js",
   "scripts": {
     "build-old": "rimraf dist && webpack --bail --progress --profile",
@@ -9,20 +9,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/atmira-it/service-template.git"
+    "url": "https://github.com/atmira-it/atmira-core-log-decorator.git"
   },
   "author": "Alberto Eles Fernandez",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.5.0"
+    "angular": "^1.4.0"
   },
   "devDependencies": {
-    "babel-register": "^6.24.1",
-    "webpack-node-externals": "^1.6.0",
     "autoprefixer": "^6.0.3",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
+    "babel-plugin-angularjs-annotate": "^0.7.0",
     "babel-preset-es2015": "^6.1.18",
+    "babel-register": "^6.24.1",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.26.1",
     "extract-text-webpack-plugin": "2.0.0-beta.5",
@@ -33,6 +33,7 @@
     "raw-loader": "^0.5.1",
     "rimraf": "^2.5.1",
     "style-loader": "^0.13.0",
-    "webpack": "2.2.0"
+    "webpack": "2.2.0",
+    "webpack-node-externals": "^1.6.0"
   }
 }
